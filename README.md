@@ -42,10 +42,6 @@ getAppendixEquipment
 
 ##Configuration
 
-###Method
-The method denotes which of the above methods you want to use. Possible values are `forecast` or `current`
-```javascript
-"method": "current"
-```
-
 ##Response
+
+##TODO
