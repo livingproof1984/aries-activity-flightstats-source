@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "aries-data": "aries-data/aries-data",
+    "lodash.pick": "^4.2.1",
     "request-promise": "^2.0.0"
   }
 }
