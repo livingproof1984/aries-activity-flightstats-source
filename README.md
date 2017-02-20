@@ -4,6 +4,8 @@
 
 This is an integration for [Flightstats](https://developer.flightstats.com/).
 
+[![CircleCI](https://circleci.com/gh/aries-data/aries-activity-flightstats-source.svg?style=svg)](https://circleci.com/gh/aries-data/aries-activity-flightstats-source)
+
 ##Methods
 This integration has 20 methods that can be called, broken out into four API categories.
 
