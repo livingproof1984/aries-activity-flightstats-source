@@ -1,89 +1,89 @@
 ![alt text](/img/logo.png "Aries Integration for Flightstats")
 
-#Aries Integration for Flightstats
+# Aries Integration for Flightstats
 
 This is an integration for [Flightstats](https://developer.flightstats.com/).
 
 [![CircleCI](https://circleci.com/gh/aries-data/aries-activity-flightstats-source.svg?style=svg)](https://circleci.com/gh/aries-data/aries-activity-flightstats-source)
 
-##Methods
+## Methods
 This integration has 20 methods that can be called, broken out into four API categories.
 
-###FIDS (Flight Information Display System)
+### FIDS (Flight Information Display System)
 
-####Fids Arrival
+#### Fids Arrival
 `fidsArrival` - Retrieve FIDS display data, given by the requestedFields parameter, for flights arriving at a given airport, including fields selected by a comma-separated list.
 
-####Fids Departure
+#### Fids Departure
 `fidsDeparture` - Retrieve FIDS display data, given by the requestedFields parameter, for flights departing from a given airport, including fields selected by a comma-separated list.
 
-###Airport
+### Airport
 
-####Get All Airports
+#### Get All Airports
 `getAllAirports` - Returns a listing of all airports, including those that are not currently active.
 
-####Get Active Airports
+#### Get Active Airports
 `getActiveAirports` - Returns a listing of currently active airports. (Airports that are in use).
 
-####Get Active Airports For Date
+#### Get Active Airports For Date
 `getActiveAirportsForDate` - Returns a listing of active airports on the given date.
 
-####Get Current Airport By Code
+#### Get Current Airport By Code
 `getCurrentAirportByCode` - Returns the airport that currently has the given code (or null if none)
 
-####Get Airport By City Code
+#### Get Airport By City Code
 `getCurrentAirportByCode` - Returns a listing of airports that have had the given city code 
 
-###Airline
+### Airline
 
-####Get All Airlines
+#### Get All Airlines
 `getAllAirlines` - Returns a listing of all airlines, including those that are not currently active. (In use).
 
-####Get Active Airlines
+#### Get Active Airlines
 `getActiveAirlines` - Returns a listing of currently active airlines.
 
-####Get Active Airlines For Date
+#### Get Active Airlines For Date
 `getActiveAirlinesForDate` - Returns a listing of active airlines on the given date.
 
-###Flight Status
+### Flight Status
 
-####Get Taxi Data
+#### Get Taxi Data
 `getTaxiData` - Returns a list of taxi data from the given airport and embark status, arrival or departure.
 
-####Get Flight Status Arrivals By Airport
+#### Get Flight Status Arrivals By Airport
 `getFlightStatusArrivalsByAirport` - Returns the status of all flights arriving (or having arrived) at an airport within the specified hour, or within a window up to 6 hours wide if numHours is specified.
 
-####Get Flight Status Departures By Airport
+#### Get Flight Status Departures By Airport
 `getFlightStatusArrivalsByAirport` - Returns the status of all flights departing (or having departed) from an airport within the specified hour, or within a window up to 6 hours wide if numHours is specified.
 
-####Get Flight Tracks Arrivals By Airport
+#### Get Flight Tracks Arrivals By Airport
 `getFlightTracksArrivalsByAirport` - Returns the positional tracks of active flights having the specified arrival airport. Flight plans may be optionally included. "Active" flights are those for which positional data are available, and which have not yet landed. To narrow down to only the freshest data, you may optionally limit the age (in minutes) and/or number of positions per track.
 
-####Get Flight Tracks Departures By Airport
+#### Get Flight Tracks Departures By Airport
 `getFlightTracksDeparturesByAirport` - Returns the positional tracks of active flights having the specified departure airport. Flight plans may be optionally included. "Active" flights are those for which positional data are available, and which have not yet landed. To narrow down to only the freshest data, you may optionally limit the age (in minutes) and/or number of positions per track.
 
-####Get Appendix Airport
+#### Get Appendix Airport
 `getAppendixAirport` - Returns list of airports flying into given airport.
 
-####Get Appendix Equipment
+#### Get Appendix Equipment
 `getAppendixEquipment` - Returns list of equipment used flying into given airport.
 
-##Configuration
+## Configuration
 This integration has 2 required parameters, appId and appKey, for all methods while many of the methods are unique and require a different number of parameters.
 
-###App Id
+### App Id
 The app id is the application id associated with your developer account. The app id can be found by logging into your developer flightstats account > Dashboard (Can be found at the top-middle section of page) > View (of the app to use) and it'll be under APPLICATION ID.
 ```javascript
 "appId": "h35fa832"
 ```
 
-###App Key
+### App Key
 The app key is the application key associated with the specified application inside of your developer account. The app key can be found by logging into your developer flightstats account > Dashboard (Can be found at the top-middle section of page) > View (of the app to use) and it'll be under APPLICATION KEYS.
 ```javascript
 "appKey": "h738j6e64d98323fb58e827f1696uej6"
 ```
 
-###Requested Fields
+### Requested Fields
 The requested fields parameter are the fields that will be displayed if given. A listed of the accepted requested fields can be found [here](https://developer.flightstats.com/api-docs/fids/v1/fidsResponse).
 ```javascript
 "requestedFields": [ 
@@ -95,37 +95,37 @@ The requested fields parameter are the fields that will be displayed if given. A
 ]
 ```
 
-###Time Window Begin
+### Time Window Begin
 The number of minutes before 'now' during which flights should potentially be included. Default window is based on airport classification.
 ```javascript
 "timeWindowBegin": 720
 ```
 
-###Time Window End
+### Time Window End
 The number of minutes after 'now' during which flights should potentially be included. Default window is based on airport classification.
 ```javascript
 "timeWindowEnd": 720
 ```
 
-###Late Minutes
+### Late Minutes
 The number of minutes after which a flight should be considered late, when generating remarks. Defaults to 100.
 ```javascript
 "lateMinutes": 15
 ```
 
-###Airport
+### Airport
 The airport to retrieve data for.
 ```javascript
 "airport": "CVG"
 ```
 
-###Embark
+### Embark
 The arrival or departure of a given airport or flight.
 ```javascript
 "embark": "arr"
 ```
 
-###Date
+### Date
 The date of the wanted query. Default is set to the current date.
 * Year: The four-digit year.
 * Month: The numeric month value. (1-12)
@@ -140,31 +140,31 @@ The date of the wanted query. Default is set to the current date.
 }
 ```
 
-###Airport Code
+### Airport Code
 The airport code is the IATA code associated with the airport, the three-letter code assigned to airports. A list of IATA codes can be found [here](http://www.airportcodes.org/).
 ```javascript
 "airportCode": "CVG"
 ```
 
-###City Code
+### City Code
 The city code is the three-letter code assigned to cities. A list of city codes can be found [here](http://www.ezoory.com/forms/eng/citycodlong.html).
 ```javascript
 "cityCode": "CVG"
 ```
 
-###UTC
+### UTC
 The UTC parameter decides whether the time is given in UTC or local time. Default is false.
 ```javascript
 "utc": "true"
 ```
 
-###Include Flight Plan
+### Include Flight Plan
 The include flight plan parameter adds waypoints, the longitude and latitude of the flight, if true. Default is false.
 ```javascript
 "includeFlightPlan": "false"
 ```
 
-##Response
+## Response
 This is an example response with the `getFlightTracksDeparturesByAirport` method with includeFlightPlan set to false.
 ```javascript
 {
