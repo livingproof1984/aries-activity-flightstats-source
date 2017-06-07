@@ -1,0 +1,122 @@
+{
+ "request": {
+  "airport": {
+   "requestedCode": "CVG",
+   "fsCode": "CVG"
+  },
+  "includeFlightPlan": {
+   "requested": "false",
+   "interpreted": false
+  },
+  "maxPositions": {
+   "requested": "2",
+   "interpreted": 2
+  },
+  "maxPositionAgeMinutes": {},
+  "codeType": {},
+  "maxFlights": {
+   "requested": "1",
+   "interpreted": 1
+  },
+  "extendedOptions": {},
+  "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/airport/tracks/CVG/dep"
+ },
+ "appendix": {
+  "airlines": [
+   {
+    "fs": "9E",
+    "iata": "9E",
+    "icao": "FLG",
+    "name": "Endeavor Air",
+    "active": true
+   }
+  ],
+  "airports": [
+   {
+    "fs": "CVG",
+    "iata": "CVG",
+    "icao": "KCVG",
+    "faa": "CVG",
+    "name": "Cincinnati/Northern Kentucky Airport",
+    "city": "Cincinnati",
+    "cityCode": "CVG",
+    "stateCode": "OH",
+    "postalCode": "41048",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/New_York",
+    "weatherZone": "OHZ077",
+    "localTime": "2016-09-15T16:36:40.382",
+    "utcOffsetHours": -4,
+    "latitude": 39.0555,
+    "longitude": -84.66145,
+    "elevationFeet": 897,
+    "classification": 1,
+    "active": true,
+    "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/CVG?codeType=fs",
+    "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/CVG?codeType=fs"
+   },
+   {
+    "fs": "BWI",
+    "iata": "BWI",
+    "icao": "KBWI",
+    "faa": "BWI",
+    "name": "Baltimore/Wash International Thurgood Marshall Airport",
+    "city": "Baltimore",
+    "cityCode": "BWI",
+    "stateCode": "MD",
+    "postalCode": "21240",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/New_York",
+    "weatherZone": "MDZ014",
+    "localTime": "2016-09-15T16:36:40.785",
+    "utcOffsetHours": -4,
+    "latitude": 39.179526,
+    "longitude": -76.668941,
+    "elevationFeet": 146,
+    "classification": 1,
+    "active": true,
+    "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/BWI?codeType=fs",
+    "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/BWI?codeType=fs"
+   }
+  ]
+ },
+ "flightTracks": [
+  {
+   "flightId": 776718506,
+   "carrierFsCode": "9E",
+   "flightNumber": "3896",
+   "tailNumber": "N8869B",
+   "departureAirportFsCode": "CVG",
+   "arrivalAirportFsCode": "BWI",
+   "departureDate": {
+    "dateLocal": "2016-09-15T16:00:00.000",
+    "dateUtc": "2016-09-15T20:00:00.000Z"
+   },
+   "equipment": "CR2",
+   "bearing": 75.20462049752904,
+   "heading": 89.7266173770676,
+   "positions": [
+    {
+     "lon": -81.1704,
+     "lat": 38.3438,
+     "speedMph": 533,
+     "altitudeFt": 27156,
+     "source": "derived",
+     "date": "2016-09-15T20:31:06.000Z"
+    },
+    {
+     "lon": -81.3346,
+     "lat": 38.3433,
+     "speedMph": 521,
+     "altitudeFt": 27123,
+     "source": "derived",
+     "date": "2016-09-15T20:30:06.000Z"
+    }
+   ]
+  }
+ ]
+}

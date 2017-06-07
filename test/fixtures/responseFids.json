@@ -1,0 +1,64 @@
+{
+   "fidsData":[
+      {
+         "flightId":"298260941",
+         "lastUpdatedTime":"02:16 PM",
+         "lastUpdatedTimeUtc":"10:16 PM",
+         "lastUpdatedDate":"02/10/2013",
+         "lastUpdatedDateUtc":"02/10/2013",
+         "dayOffset":0,
+         "statusCode":"S",
+         "airlineName":"SkyWest Airlines",
+         "airlineCode":"OO",
+         "flightNumber":"6416",
+         "airlineLogoUrlPng":"http://dskx8vepkd3ev.cloudfront.net/airline-logos/v2/logos/png/300x100/oo-logo.png",
+         "airlineLogoUrlSvg":"http://dskx8vepkd3ev.cloudfront.net/airline-logos/v2/logos/svg/oo-logo.svg",
+         "isCodeshare":false,
+         "operatedFlightNumber":"6416",
+         "operatingAirlineName":"SkyWest Airlines",
+         "operatingAirlineCode":"OO",
+         "originCity":"San Francisco",
+         "originFamiliarName":"San Francisco",
+         "originStateCode":"CA",
+         "originCountryCode":"US",
+         "destinationAirportName":"Albuquerque International Airport",
+         "destinationAirportCode":"ABQ",
+         "destinationCity":"Albuquerque",
+         "destinationFamiliarName":"Albuquerque",
+         "destinationStateCode":"NM",
+         "destinationCountryCode":"US",
+         "flight":"OO 6416",
+         "delayed":false,
+         "remarks":"On-Time",
+         "remarksWithTime":"On-Time",
+         "remarksCode":"ON_TIME",
+         "airportCode":"ABQ",
+         "airportName":"Albuquerque International Airport",
+         "city":"Albuquerque",
+         "familiarName":"Albuquerque",
+         "scheduledTime":"12:50 PM",
+         "currentTime":"12:50 PM",
+         "scheduledGateTime":"12:50 PM",
+         "currentGateTime":"12:50 PM",
+         "codesharesAsNames":[
+            "United Airlines 6416",
+            "ANA - All Nippon Airways 7328",
+            "Air Canada 4030"
+         ],
+         "codesharesAsCodes":[
+            "UA 6416",
+            "NH 7328",
+            "AC 4030"
+         ],
+         "uplineAirportNames":[
+            "Portland International Airport "
+         ],
+         "uplineAirportCodes":[
+            "PDX"
+         ],
+         "weather":"Clear",
+         "temperatureC":5,
+         "temperatureF":41
+      }
+   ]
+}
