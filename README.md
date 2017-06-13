@@ -290,3 +290,6 @@ This is an example response with the `getFlightTracksDeparturesByAirport` method
  ]
 }
 ```
+
+## License
+MIT
